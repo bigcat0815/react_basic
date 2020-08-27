@@ -6,7 +6,11 @@ function TOC(props) {
     var i = 0;
     while(i<tocData.length)
     {
-        lists.push(<a role="listitem" class="item" href={"/content"+tocData[i].id}>{tocData[i].title}</a>);
+        lists.push(<a role="listitem" class="item" 
+        href={"/content"+tocData[i].id} data-id ={tocData[i].id} onClick={function(e) {            
+            e.preventDefault();
+            props.onChangePage(e.target.dataset.id);
+        }}>{tocData[i].title}</a>);
         i++;
     }
     return (
