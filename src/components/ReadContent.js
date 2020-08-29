@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Content(props) {
+function ReadContent(props) {
     return (
         <div class="ui card" data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i></div></div>">
           <div class="content">
@@ -13,4 +13,4 @@ function Content(props) {
       </div>
     );
   }
-  export default Content;
+  export default ReadContent;
